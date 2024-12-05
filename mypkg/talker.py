@@ -2,20 +2,22 @@ import rclpy                     #ROS 2のクライアントのためのライ�
 from rclpy.node import Node      #ノードを実装するためのNodeクラス（クラスは第10回で）
 from std_msgs.msg import Int16   #通信の型（16ビットの符号付き整数）
 
-rclpy.init()
-node = Node("talker")            #ノード作成（nodeという「オブジェクト」を作成）
-pub = node.create_publisher(Int16, "countup", 10)   #パブリッシャのオブジェクト作成
-n = 0 #カウント用変数
 
+class Talker(Node):
+    def __init__(self):
+        super().__init__("talker")
+        self.pub = self.create_publisher(Int16, "countup", 10)
+        self.n = 0
+        self.create_timer(0.5, self.cb)
 
-def cb():          #20行目で定期実行されるコールバック関数
-    global n       #関数を抜けてもnがリセットされないようにしている
-    msg = Int16()  #メッセージの「オブジェクト」
-    msg.data = n   #msgオブジェクトの持つdataにnを結び付け
-    pub.publish(msg)        #pubの持つpublishでメッセージ送信
-    n += 1
+    def cb(self):          #20行目で定期実行されるコールバック関数
+        msg = Int16()  #メッセージの「オブジェクト」
+        msg.data = self.n   #msgオブジェクトの持つdataにnを結び付け
+        self.pub.publish(msg)        #pubの持つpublishでメッセージ送信
+        self.n += 1
 
 
 def main():
-    node.create_timer(0.5, cb)  #タイマー設定
+    rclpy.init()
+    node = Talker()
     rclpy.spin(node)            #実行（無限ループ）
