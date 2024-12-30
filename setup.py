@@ -21,7 +21,7 @@ setup(
     zip_safe=True,
     maintainer='Tomoya Tsuji',
     maintainer_email='s23c1093hj@s.chibakoudai.jp',
-    description='ロボットシステム学サンプル',
+    description='ロボットシステム学ROS 2パッケージ',
     license='BSD-3-Clause',
     tests_require=['pytest'],
     entry_points={
