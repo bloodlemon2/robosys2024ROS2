@@ -23,8 +23,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'talker = mypkg.talker:main',
-            'listener = mypkg.listener:main',
+            'network_speed_measurement = mypkg.network_speed_measurement:main',
+            'network_speed_receive = mypkg.network_speed_receive:main',
         ],
     },
 )
