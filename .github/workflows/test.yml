@@ -6,11 +6,12 @@ jobs:
     container: ryuichiueda/ubuntu22.04-ros2:latest
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Python
+      - name: set up python
         run: |
           apt-get update
           apt-get install -y python3-pip
           python3 -m pip install --upgrade pip
+          cd /root/ros2_ws/src/mypkg
           python3 -m pip install -r /root/ros2_ws/src/mypkg/requirements.txt
       - name: build and test
         run: |
