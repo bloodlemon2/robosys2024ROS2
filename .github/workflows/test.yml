@@ -8,6 +8,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Set up Python
         run: |
+          apt-get update
+          apt-get install -y python3-pip
           python3 -m pip install --upgrade pip
           python3 -m pip install -r /root/ros2_ws/src/mypkg/requirements.txt
       - name: build and test
