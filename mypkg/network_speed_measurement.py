@@ -10,7 +10,7 @@ class NetworkSpeedMeasurement(Node):
         self.download_pub = self.create_publisher(Float32, 'download_speed', 10)
         self.upload_pub = self.create_publisher(Float32, 'upload_speed', 10)
         self.ping_pub = self.create_publisher(Float32, 'ping', 10)
-        self.timer = self.create_timer(10.0, self.cb)
+        self.timer = self.create_timer(1.0, self.cb)
 
 
     def cb(self):          #20行目で定期実行されるコールバック関数
