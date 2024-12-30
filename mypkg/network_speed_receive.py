@@ -23,3 +23,4 @@ def main():
     rclpy.init()
     node = NetworkSpeedReceive()
     rclpy.spin(node)
+    rclpy.shutdown()

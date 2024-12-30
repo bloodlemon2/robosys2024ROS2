@@ -6,6 +6,6 @@ dir=~
 cd $dir/ros2_ws
 colcon build
 source $dir/.bashrc
-timeout 60 ros2 launch mypkg network_speedtest.launch.py | tee /tmp/mypkg.log
+timeout 120 ros2 launch mypkg network_speedtest.launch.py | tee /tmp/mypkg.log
 
 (cat /tmp/mypkg.log | grep 'Received download speed:') && (cat /tmp/mypkg.log | grep 'Received upload speed:') && (cat /tmp/mypkg.log | grep 'Received ping:')
