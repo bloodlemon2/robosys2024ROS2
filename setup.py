@@ -14,7 +14,10 @@ setup(
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name), glob('launch/*.launch.py'))
     ],
-    install_requires=['setuptools'],
+    install_requires=[
+        'setuptools'
+        'speedtest-cli',
+    ],
     zip_safe=True,
     maintainer='Tomoya Tsuji',
     maintainer_email='s23c1093hj@s.chibakoudai.jp',
