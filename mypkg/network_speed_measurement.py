@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2024 Tomoya Tsuji
+# SPDX-License-Identifier: Apache-2.0
+
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float32

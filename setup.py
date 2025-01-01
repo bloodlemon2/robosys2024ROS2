@@ -22,7 +22,7 @@ setup(
     maintainer='Tomoya Tsuji',
     maintainer_email='s23c1093hj@s.chibakoudai.jp',
     description='ロボットシステム学ROS 2パッケージ',
-    license='BSD-3-Clause',
+    license='Apache License, Version 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [

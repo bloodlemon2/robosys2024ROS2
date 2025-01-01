@@ -18,5 +18,7 @@
         - upload_speedというトピックからアップロードの通信速度が送られます.
         - pingというトピックからPingが送られます.
 # ライセンス
-- このパッケージは3条項BSDライセンスの下，再頒布および使用が許可されます.
+- このパッケージはsivelが公開している[speedtest-cli](https://github.com/sivel/speedtest-cli/?tab=readme-ov-file)を利用しています.
+    - speedtest-cliはApache License, Version 2.0に基づき公開されています.
+- このパッケージはApache License, Version 2.0に基づき公開されています.
 - © 2024 Tomoya Tsuji

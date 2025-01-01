@@ -5,7 +5,7 @@
   <version>0.0.0</version>
   <description>ロボットシステム学ROS 2パッケージ</description>
   <maintainer email="s23c1093hj@s.chibakoudai.jp">Tomoya Tsuji</maintainer>
-  <license>BSD-3-Clause</license>
+  <license>Apache License, Version 2.0</license>
   <exec_depend>rclpy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>launch_ros</exec_depend>
