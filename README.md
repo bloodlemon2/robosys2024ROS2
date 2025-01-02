@@ -37,8 +37,8 @@ ros2 launch mypkg network_speedtest.launch.py
 ## このパッケージを使用する準備
 - ROS 2のインストール
 ROS 2のインストールは各自で行ってください.
-- speedtest-cliのインストール
-Ubuntu24.04ではpipでのインストールが難しかったので次の手順でインストールしました.
+- speedtest-cliのインストール  
+Ubuntu 24.04ではpipでのインストールが難しかったので次の手順でインストールしました.
 ```
 $ sudo apt-get update
 $ sudo apt-get install speedtest-cli
