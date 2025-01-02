@@ -35,7 +35,7 @@ ros2 launch mypkg network_speedtest.launch.py
 [network_speed_receive-2] [INFO] [1735712596.101065018] [network_speed_receive]: Received ping: 31.18 ms
 ```
 ## このパッケージを使用する準備
-- ROS 2のインストール
+- ROS 2のインストール  
 ROS 2のインストールは各自で行ってください.
 - speedtest-cliのインストール  
 Ubuntu 24.04ではpipでのインストールが難しかったので次の手順でインストールしました.
