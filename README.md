@@ -26,8 +26,6 @@ $ sudo apt-get update
 $ sudo apt-get install speedtest-cli
 ```
 [speedtest-cli](https://github.com/sivel/speedtest-cli/?tab=readme-ov-file)のGitHubリポジトリをクローンしてインストールすることも可能です.
-- このパッケージのインストール  
-このパッケージのインストールは各自で行ってください.
 ## 実行例
 ### ros2 runでの実行
 - 端末1  
