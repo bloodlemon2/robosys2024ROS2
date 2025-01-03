@@ -41,7 +41,7 @@ $ ros2 run ros2_speedtest_pkg network_speed_measurement
 以下のコマンドで実行し, 計測結果を表示します.
 ```
 $ ros2 run ros2_speedtest_pkg network_speed_receive
-# 計測開始から数十秒待つと計測結果を受け取り, 表示される
+# 計測開始から数十秒待つと計測結果を受け取り, 表示
 [INFO] [1735889869.162479497] [network_speed_receive]: Received download speed: 17.65 Mbps
 [INFO] [1735889869.163005184] [network_speed_receive]: Received upload speed: 8.67 Mbps
 [INFO] [1735889869.163456932] [network_speed_receive]: Received ping: 35.67 ms
@@ -67,8 +67,8 @@ $ ros2 launch ros2_speedtest_pkg network_speedtest.launch.py
 [network_speed_receive-2] [INFO] [1735712596.101065018] [network_speed_receive]: Received ping: 31.18 ms
 ```
 ## テスト環境
-- ROS 2 Jazzy （Ubuntu 24.04 LTSで, 自身のノートPCでテスト）
-- ROS 2 Humble （Ubuntu 22.04 LTSで, GitHub Actionsでテスト）
+- ROS 2 Jazzy（Ubuntu 24.04 LTSで, 自身のノートPCでテスト）
+- ROS 2 Humble（Ubuntu 22.04 LTSで, GitHub Actionsでテスト）
 # ライセンス
 - このパッケージはsivelが公開している[speedtest-cli](https://github.com/sivel/speedtest-cli/?tab=readme-ov-file)を利用しています.
     - speedtest-cliはApache License, Version 2.0に基づき公開されています.
