@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>mypkg</name>
+  <name>ros2_speedtest_pkg</name>
   <version>0.0.0</version>
   <description>ロボットシステム学ROS 2パッケージ</description>
   <maintainer email="s23c1093hj@s.chibakoudai.jp">Tomoya Tsuji</maintainer>
-  <license>Apache License, Version 2.0</license>
+  <license>Apache-2.0</license>
   <exec_depend>rclpy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>launch_ros</exec_depend>

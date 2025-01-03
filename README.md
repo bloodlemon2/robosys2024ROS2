@@ -1,7 +1,5 @@
-# robosys2024ROS2
-ロボットシステム学のROS 2のパッケージ格納用のリポジトリです.
-## このパッケージの概要
-このパッケージは接続しているネットワークの通信速度を, 60秒ごとに計測して表示させます.  
+# ros2_speedtest_pkg
+このパッケージは接続しているネットワークの通信速度を, 60秒ごとに計測して表示させるROS 2のパッケージです.  
 計測する通信速度は以下のものです.
 - ダウンロード
 - アップロード
@@ -66,8 +64,8 @@ $ echo 'source ~/ros2_ws/install/local_setup.bash' >> ~/.bashrc
 $ source ~/.bashrc
 ```
 ## テスト環境
-- ROS 2 Jazzy (Ubuntu 24.04 LTSで, 自身のノートPCでテスト)
-- ROS 2 Humble (Ubuntu 22.04 LTSで, GitHub Actionsでテスト)
+- ROS 2 Jazzy （Ubuntu 24.04 LTSで, 自身のノートPCでテスト）
+- ROS 2 Humble （Ubuntu 22.04 LTSで, GitHub Actionsでテスト）
 # ライセンス
 - このパッケージはsivelが公開している[speedtest-cli](https://github.com/sivel/speedtest-cli/?tab=readme-ov-file)を利用しています.
     - speedtest-cliはApache License, Version 2.0に基づき公開されています.

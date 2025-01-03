@@ -11,11 +11,11 @@ jobs:
           apt-get update
           apt-get install -y python3-pip
           python3 -m pip install --upgrade pip
-          rsync -av ./ /root/ros2_ws/src/mypkg/
-          cd /root/ros2_ws/src/mypkg
-          python3 -m pip install -r /root/ros2_ws/src/mypkg/requirements.txt
+          rsync -av ./ /root/ros2_ws/src/ros2_speedtest_pkg/
+          cd /root/ros2_ws/src/ros2_speedtest_pkg
+          python3 -m pip install -r /root/ros2_ws/src/ros2_speedtest_pkg/requirements.txt
       - name: build and test
         run: |
-          rsync -av ./ /root/ros2_ws/src/mypkg/
+          rsync -av ./ /root/ros2_ws/src/ros2_speedtest_pkg/
           cd /root/ros2_ws
-          bash -xv ./src/mypkg/test/test.bash /root
+          bash -xv ./src/ros2_speedtest_pkg/test/test.bash /root

@@ -10,11 +10,11 @@ import launch_ros.actions
 def generate_launch_description():
 
     network_speed_measurement = launch_ros.actions.Node(
-        package='mypkg',
+        package='ros2_speedtest_pkg',
         executable='network_speed_measurement',
         )
     network_speed_receive = launch_ros.actions.Node(
-        package='mypkg',
+        package='ros2_speedtest_pkg',
         executable='network_speed_receive',
         output='screen'
         )
