@@ -20,7 +20,7 @@
 - ROS 2のインストール  
 ROS 2のインストールは各自で行ってください.
 - speedtest-cliのインストール  
-Ubuntu 24.04ではpipでのインストールが難しかったので次の手順でインストールしました.
+Ubuntu 24.04ではpipでのインストールが難しいので, 次の手順でインストールします.
 ```
 $ sudo apt-get update
 $ sudo apt-get install speedtest-cli
